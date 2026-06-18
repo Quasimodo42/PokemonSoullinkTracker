@@ -73,12 +73,16 @@ endif()
 if(WIN32)
     target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-    target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/winsparkle.lib)
+    if(MINGW)
+        target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/winsparkle.dll)
+    else()
+        target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/winsparkle.lib)
+    endif()
 
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-        COMMAND §{CMAKE_COMMAND} -E copy_if_different
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
         "${CMAKE_CURRENT_SOURCE_DIR}/winsparkle.dll"
-        §<TARGET_FILE_DIR:${PROJECT_NAME}>
+        $<TARGET_FILE_DIR:${PROJECT_NAME}>
     )
 endif()
 
