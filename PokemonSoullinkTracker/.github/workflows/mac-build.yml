@@ -1,0 +1,29 @@
+name: MacOS Build Test
+
+on: push
+
+jobs:
+    build-mac:
+        runs-on: macos-latest
+
+        steps:
+            - name: Lade Code herunter
+              uses: actions/checkout@v4
+
+            - name: Installiere QT
+              uses: jurplel/install-qt-action@v4
+              with:
+                version: '6.5.0'
+            
+            - name: Kompiliere Projekt
+              run: |
+                mkdir build
+                cd build
+                cmake ..
+                cmake --build
+
+            - name: App sichern
+              uses: actions/upload-artifact@c4
+              with:
+                name: Mac-Apple-Test
+                path: build/
