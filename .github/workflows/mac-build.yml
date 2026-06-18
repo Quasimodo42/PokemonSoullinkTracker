@@ -24,7 +24,7 @@ jobs:
                 cmake --build
 
             - name: App sichern
-              uses: actions/upload-artifact@c4
+              uses: actions/upload-artifact@v4
               with:
                 name: Mac-Apple-Test
                 path: build/
