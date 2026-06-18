@@ -68,3 +68,18 @@ install(TARGETS PokemonSoullinkTracker
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(PokemonSoullinkTracker)
 endif()
+
+# Selbst hinzufefügt
+if(WIN32)
+    target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+    target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/winsparkle.lib)
+
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+        COMMAND §{CMAKE_COMMAND} -E copy_if_different
+        "${CMAKE_CURRENT_SOURCE_DIR}/winsparkle.dll"
+        §<TARGET_FILE_DIR:${PROJECT_NAME}>
+    )
+endif()
+
+
