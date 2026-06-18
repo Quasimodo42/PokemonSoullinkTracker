@@ -1,6 +1,8 @@
-name: MacOS Build Test
+name: MacOS Release Build
 
-on: push
+on: 
+  release:
+    types: [published]
 
 jobs:
     build-mac:
@@ -23,8 +25,14 @@ jobs:
                 cmake ..
                 cmake --build .
 
-            - name: App sichern
-              uses: actions/upload-artifact@v4
+            - name: App in ZIP verpacken
+              run: |
+                  cd PokemonSoullinkTracker/build
+                  zip -r PokemonTracker-Mac.zip *.app
+
+            - name: Datei an GitHub Release anhängen
+              uses: softprops/action-gh-release@v2
               with:
-                name: Mac-Apple-Test
-                path: build/
+                files: PokemonSoullinkTracker/build/PokemonTracker-Mac.zip
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
