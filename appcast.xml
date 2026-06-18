@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>Pokemon Soullink Tracker Updates</title>
+        <item>
+            <title>Version 0.1</title>
+            <sparkle:version>0.1</sparkle:version>
+
+            <enclosure url="SPÄTERSPÄTERSPÄTER"
+                       sparkle:os="windows"
+                       type="application/zip" />
+
+            <enclosure url="https://github.com/Quasimodo42/PokemonSoullinkTracker/releases/download/v0.1/PokemonTracker-Mac.zip"
+                       sparkle:os="macos"
+                       type="application/zip" />
+        
+        </item>
+    </channel>
+</rss>
