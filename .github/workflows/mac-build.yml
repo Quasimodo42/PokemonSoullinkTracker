@@ -17,6 +17,7 @@ jobs:
             
             - name: Kompiliere Projekt
               run: |
+                cd PokemonSoullinkTracker
                 mkdir build
                 cd build
                 cmake ..
