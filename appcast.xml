@@ -6,7 +6,7 @@
             <title>Version 0.1</title>
             <sparkle:version>0.1</sparkle:version>
 
-            <enclosure url="SPÄTERSPÄTERSPÄTER"
+            <enclosure url="https://github.com/Quasimodo42/PokemonSoullinkTracker/releases/download/v0.1/PokemonTracker-Mac.zip"
                        sparkle:os="windows"
                        type="application/zip" />
 
