@@ -16,6 +16,9 @@ int main(int argc, char *argv[])
     win_sparkle_set_app_details(L"Quasimodo42", L"PokemonSoullinkTracker", L"0.1");
 
     win_sparkle_init();
+
+    // Debug: Öffne sofort winsparkle PopUp
+    //win_sparkle_check_update_with_ui();
 #endif
 
 
