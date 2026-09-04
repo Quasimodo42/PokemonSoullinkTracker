@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminPokemonChange</class>
+ <widget class="QDialog" name="AdminPokemonChange">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QToolBox" name="toolBox">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="pageTeam">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>368</width>
+        <height>216</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Team Pokemon</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="5" column="0">
+          <widget class="QLineEdit" name="lineEditJannis5"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLineEdit" name="lineEditJannis3"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="labelTeamJonah">
+           <property name="text">
+            <string>Jonah</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLineEdit" name="lineEditJannis6"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="lineEditJannis2"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="labelTeamLuis">
+           <property name="text">
+            <string>Luis</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="labelTeamAlex">
+           <property name="text">
+            <string>Alex</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="lineEditJannis1"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="labelTeamJannis">
+           <property name="text">
+            <string>Jannis</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLineEdit" name="lineEditJannis4"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEditJonah1"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEditLuis1"/>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="lineEditAlex1"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEditJonah2"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="lineEditLuis2"/>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="lineEditAlex2"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEditJonah3"/>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="lineEditLuis3"/>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="lineEditAlex3"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="lineEditJonah4"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="lineEditJonah5"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="lineEditJonah6"/>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="lineEditLuis4"/>
+         </item>
+         <item row="4" column="3">
+          <widget class="QLineEdit" name="lineEditAlex4"/>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLineEdit" name="lineEditLuis5"/>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLineEdit" name="lineEditAlex5"/>
+         </item>
+         <item row="6" column="2">
+          <widget class="QLineEdit" name="lineEditLuis6"/>
+         </item>
+         <item row="6" column="3">
+          <widget class="QLineEdit" name="lineEditAlex6"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>382</width>
+        <height>162</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Box Pokemon</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="pageDead">
+      <attribute name="label">
+       <string>Tote Pokemon</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AdminPokemonChange</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AdminPokemonChange</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

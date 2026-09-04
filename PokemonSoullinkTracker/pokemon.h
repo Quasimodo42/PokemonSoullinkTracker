@@ -7,11 +7,10 @@ class Pokemon
 {
 private:
     QString name;
-    QString nickname;
 public:
-    Pokemon();
+    Pokemon(QString name) :
+        name(name) {}
     QString getName() const;
-    QString getNickname() const;
 };
 
 #endif // POKEMON_H

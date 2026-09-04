@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "soullinkteam.h"
 
 #include <QApplication>
 
@@ -9,6 +10,9 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    QCoreApplication::setOrganizationName("SoulLinkTeam");
+    QCoreApplication::setApplicationName("TrackerApp");
 
 #ifdef Q_OS_WIN
     win_sparkle_set_appcast_url("https://quasimodo42.github.io/PokemonSoullinkTracker/appcast.xml");
@@ -29,5 +33,18 @@ int main(int argc, char *argv[])
     win_sparkle_cleanup();
 #endif
 
+    // AB HIER MAIN CODE:
+
+
+    //return 0;
     return QApplication::exec();
 }
+
+//TODO NOTES:
+/*
+ * In Mainwindow: Widgets müssen verschwinden wenn leer!
+ *
+ *
+ *
+ */
+
