@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>596</width>
+    <height>352</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>368</width>
+        <width>564</width>
         <height>216</height>
        </rect>
       </property>
@@ -143,8 +143,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>382</width>
-        <height>162</height>
+        <width>578</width>
+        <height>214</height>
        </rect>
       </property>
       <attribute name="label">
@@ -152,6 +152,14 @@
       </attribute>
      </widget>
      <widget class="QWidget" name="pageDead">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>578</width>
+        <height>214</height>
+       </rect>
+      </property>
       <attribute name="label">
        <string>Tote Pokemon</string>
       </attribute>

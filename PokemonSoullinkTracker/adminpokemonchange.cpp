@@ -67,42 +67,28 @@ void AdminPokemonChange::on_buttonBox_accepted()
 
 void AdminPokemonChange::loadLineEdits()
 {
-    int index = 0;
-    for (const auto& trainer : slt->getTeam()) {
-        QString name = trainer->getName();
+    const auto& team = slt->getTeam();
 
-        if (name == "Jannis") {
+    for (int row = 0; row < teamLineEditGrid.size(); row++) {
 
-            if (!trainer->getTeamPokemon().isEmpty()) {
+        if (row >= team.size()) break;
 
-                int pokeNumb = 1;
-                for (const auto& poke : trainer->getTeamPokemon()) {
+        auto trainer = team.at(row);
+        auto uiSlots = teamLineEditGrid.at(row);
+        auto teamPokemon = trainer->getTeamPokemon();
 
-                    if (pokeNumb == 1) {
-                        ui->lineEditJannis1->setText(poke->getName());
-                        pokeNumb++;
-                    } else if (pokeNumb == 2) {
-                        ui->lineEditJannis2->setText(poke->getName());
-                        pokeNumb++;
-                    } else if (pokeNumb == 3) {
-                        ui->lineEditJannis3->setText(poke->getName());
-                        pokeNumb++;
-                    } else if (pokeNumb == 4) {
-                        ui->lineEditJannis4->setText(poke->getName());
-                        pokeNumb++;
-                    } else if (pokeNumb == 5) {
-                        ui->lineEditJannis5->setText(poke->getName());
-                        pokeNumb++;
-                    } else if (pokeNumb == 6) {
-                        ui->lineEditJannis6->setText(poke->getName());
-                        pokeNumb++;
-                    }
-                }
-            }
+        for (auto lineEdit : uiSlots) {
+            lineEdit->setPlaceholderText("---");
+            lineEdit->clear();
         }
 
+        for (int col = 0; col < uiSlots.size(); col++) {
 
-        index++;
+            if (col >= teamPokemon.size()) break;
+
+            QString pokeName = teamPokemon.at(col)->getName();
+            uiSlots.at(col)->setText(pokeName);
+        }
     }
 }
 
