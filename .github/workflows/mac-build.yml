@@ -25,9 +25,10 @@ jobs:
                 cmake ..
                 cmake --build .
 
-            - name: App in ZIP verpacken
+            - name: App in ZIP verpacken und QT bündeln
               run: |
                   cd PokemonSoullinkTracker/build
+                  macdeployqt PokemonSoullinkTracker.app
                   zip -r PokemonTracker-Mac.zip *.app
 
             - name: Datei an GitHub Release anhängen

@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "soullinkteam.h"
 
 #include <QApplication>
 
@@ -17,14 +16,13 @@ int main(int argc, char *argv[])
 #ifdef Q_OS_WIN
     win_sparkle_set_appcast_url("https://quasimodo42.github.io/PokemonSoullinkTracker/appcast.xml");
 
-    win_sparkle_set_app_details(L"Quasimodo42", L"PokemonSoullinkTracker", L"0.1");
+    win_sparkle_set_app_details(L"Quasimodo42", L"PokemonSoullinkTracker", L"0.2");
 
     win_sparkle_init();
 
     // Debug: Öffne sofort winsparkle PopUp
     //win_sparkle_check_update_with_ui();
 #endif
-
 
     MainWindow w;
     w.show();
@@ -40,11 +38,4 @@ int main(int argc, char *argv[])
     return QApplication::exec();
 }
 
-//TODO NOTES:
-/*
- * In Mainwindow: Widgets müssen verschwinden wenn leer!
- *
- *
- *
- */
-
+//
