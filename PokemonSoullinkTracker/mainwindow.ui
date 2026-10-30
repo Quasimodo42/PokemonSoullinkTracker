@@ -47,19 +47,19 @@
            </widget>
           </item>
           <item row="5" column="3">
-           <widget class="QListWidget" name="listWidget_17"/>
+           <widget class="QListWidget" name="listWidget_Luis4"/>
           </item>
           <item row="4" column="4">
-           <widget class="QListWidget" name="listWidget_15"/>
+           <widget class="QListWidget" name="listWidget_Alex3"/>
           </item>
           <item row="3" column="3">
-           <widget class="QListWidget" name="listWidget_11"/>
+           <widget class="QListWidget" name="listWidget_Luis2"/>
           </item>
           <item row="6" column="1">
-           <widget class="QListWidget" name="listWidget_3"/>
+           <widget class="QListWidget" name="listWidget_Jannis5"/>
           </item>
           <item row="2" column="3">
-           <widget class="QListWidget" name="listWidget_8"/>
+           <widget class="QListWidget" name="listWidget_Luis1"/>
           </item>
           <item row="1" column="4">
            <widget class="QLabel" name="labelTrainerAlex">
@@ -69,13 +69,13 @@
            </widget>
           </item>
           <item row="2" column="4">
-           <widget class="QListWidget" name="listWidget_9"/>
+           <widget class="QListWidget" name="listWidget_Alex1"/>
           </item>
           <item row="7" column="3">
-           <widget class="QListWidget" name="listWidget_23"/>
+           <widget class="QListWidget" name="listWidget_Luis6"/>
           </item>
           <item row="2" column="1">
-           <widget class="QListWidget" name="listWidget"/>
+           <widget class="QListWidget" name="listWidget_Jannis1"/>
           </item>
           <item row="10" column="0">
            <widget class="QLabel" name="labelDead">
@@ -99,7 +99,7 @@
            </widget>
           </item>
           <item row="4" column="2">
-           <widget class="QListWidget" name="listWidget_13"/>
+           <widget class="QListWidget" name="listWidget_Jonah3"/>
           </item>
           <item row="1" column="1">
            <widget class="QLabel" name="labelTrainerJannis">
@@ -109,10 +109,10 @@
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QListWidget" name="listWidget_6"/>
+           <widget class="QListWidget" name="listWidget_Jannis3"/>
           </item>
           <item row="5" column="1">
-           <widget class="QListWidget" name="listWidget_5"/>
+           <widget class="QListWidget" name="listWidget_Jannis4"/>
           </item>
           <item row="9" column="3">
            <widget class="QLabel" name="labelBoxLuis">
@@ -122,13 +122,13 @@
            </widget>
           </item>
           <item row="4" column="3">
-           <widget class="QListWidget" name="listWidget_14"/>
+           <widget class="QListWidget" name="listWidget_Luis3"/>
           </item>
           <item row="6" column="2">
-           <widget class="QListWidget" name="listWidget_19"/>
+           <widget class="QListWidget" name="listWidget_Jonah5"/>
           </item>
           <item row="7" column="2">
-           <widget class="QListWidget" name="listWidget_22"/>
+           <widget class="QListWidget" name="listWidget_Jonah6"/>
           </item>
           <item row="9" column="1">
            <widget class="QLabel" name="labelBoxJannis">
@@ -138,10 +138,10 @@
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QListWidget" name="listWidget_2"/>
+           <widget class="QListWidget" name="listWidget_Jannis2"/>
           </item>
           <item row="3" column="2">
-           <widget class="QListWidget" name="listWidget_10"/>
+           <widget class="QListWidget" name="listWidget_Jonah2"/>
           </item>
           <item row="9" column="4">
            <widget class="QLabel" name="labelBoxAlex">
@@ -151,13 +151,13 @@
            </widget>
           </item>
           <item row="5" column="4">
-           <widget class="QListWidget" name="listWidget_18"/>
+           <widget class="QListWidget" name="listWidget_Alex4"/>
           </item>
           <item row="3" column="4">
-           <widget class="QListWidget" name="listWidget_12"/>
+           <widget class="QListWidget" name="listWidget_Alex2"/>
           </item>
           <item row="7" column="4">
-           <widget class="QListWidget" name="listWidget_24"/>
+           <widget class="QListWidget" name="listWidget_Alex6"/>
           </item>
           <item row="1" column="2">
            <widget class="QLabel" name="labelTrainerJonah">
@@ -167,19 +167,19 @@
            </widget>
           </item>
           <item row="2" column="2">
-           <widget class="QListWidget" name="listWidget_7"/>
+           <widget class="QListWidget" name="listWidget_Jonah1"/>
           </item>
           <item row="5" column="2">
-           <widget class="QListWidget" name="listWidget_16"/>
+           <widget class="QListWidget" name="listWidget_Jonah4"/>
           </item>
           <item row="7" column="1">
-           <widget class="QListWidget" name="listWidget_4"/>
+           <widget class="QListWidget" name="listWidget_Jannis6"/>
           </item>
           <item row="6" column="4">
-           <widget class="QListWidget" name="listWidget_21"/>
+           <widget class="QListWidget" name="listWidget_Alex5"/>
           </item>
           <item row="6" column="3">
-           <widget class="QListWidget" name="listWidget_20"/>
+           <widget class="QListWidget" name="listWidget_Luis5"/>
           </item>
          </layout>
         </item>

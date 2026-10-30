@@ -39,14 +39,14 @@ void MainWindow::on_pushButtonReLoad_pressed()
     QSettings settings;
     QString savedPath = settings.value("jsonFilePath", "").toString();
 
-    ui->listWidget_11->addItem("gg");
-    // daten aus logik holen und dann in die widgets reinladen
+
+
     try {
         slt.readPokeJSON(savedPath);
+        updateUi();
     } catch (std::exception& e) {
         QMessageBox::critical(this, "Fehler", e.what());
     }
-
 
 }
 
@@ -61,6 +61,45 @@ void MainWindow::changeJsonUrl()
 void MainWindow::updateUi()
 {
 
+    ui->listWidget_Alex1->clear();
+    ui->listWidget_Jannis1->clear();
+    ui->listWidget_Jonah1->clear();
+    ui->listWidget_Luis1->clear();
+    ui->listWidget_Jannis2->clear();
+
+    const auto& trainers = slt.getTeam();
+
+    // 3. Über die Trainer und deren Pokémon iterieren
+    for (const auto& trainerPtr : trainers) {
+        if (!trainerPtr) continue; // Sicherheitshalber auf Nullpointer prüfen
+
+        // Annahme: Dein Trainer-Objekt hat eine Methode getName()
+        QString trainerName = trainerPtr->getName();
+
+        // Annahme: Dein Trainer-Objekt hat eine Methode getTeam(), die den Vector zurückgibt
+        for (const auto& pokemon : trainerPtr->getTeamPokemon()) {
+            // Annahme: Dein Pokemon-Objekt hat eine Methode getName()
+            QString pokeName = pokemon->getName();
+
+            // 4. Die Pokémon dem richtigen Widget zuordnen
+
+
+        ui->listWidget_Luis2->addItem("gg");
+        // daten aus logik holen und dann in die widgets reinladen
+
+        if (trainerName == "Jannis") {
+            ui->listWidget_Jannis1->addItem(pokeName);
+        } else if (trainerName == "Jonah") {
+            ui->listWidget_Jonah1->addItem(pokeName);
+        } else if (trainerName == "Luis") {
+            ui->listWidget_Luis1->addItem(pokeName);
+        } else if (trainerName == "Alex") {
+            ui->listWidget_Alex1->addItem(pokeName);
+        }
+
+        }
+
+}
 }
 
 void MainWindow::loadPokeData()
